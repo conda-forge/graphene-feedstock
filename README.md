@@ -14,9 +14,7 @@ Summary: GraphQL Framework for Python
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/graphene-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/graphene-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/graphene-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/graphene-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/graphene-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/graphene-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/graphene-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/graphene-feedstock)
 
 Current release info
 ====================
