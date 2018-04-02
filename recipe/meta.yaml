@@ -1,8 +1,8 @@
 {% set name = "graphene" %}
-{% set version = "1.4" %}
+{% set version = "2.1" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "80de19b703990376ffbfc0f8c3636f90bd125e34f53547bdee5642509e11969b" %}
+{% set hash = "cf8c7fd4dc74c959a44cd817d9e1b07abad185bbf586aac1f75650c1abdd5d31" %}
 {% set build = 0 %}
 
 package:
@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: python
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
