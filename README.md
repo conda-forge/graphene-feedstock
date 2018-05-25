@@ -14,12 +14,15 @@ Summary: GraphQL Framework for Python
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/graphene-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/graphene-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/graphene-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/graphene-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/graphene/badges/version.svg)](https://anaconda.org/conda-forge/graphene)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/graphene/badges/downloads.svg)](https://anaconda.org/conda-forge/graphene)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-graphene-green.svg)](https://anaconda.org/conda-forge/graphene) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/graphene.svg)](https://anaconda.org/conda-forge/graphene) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/graphene.svg)](https://anaconda.org/conda-forge/graphene) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/graphene.svg)](https://anaconda.org/conda-forge/graphene) |
 
 Installing graphene
 ===================
@@ -64,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========

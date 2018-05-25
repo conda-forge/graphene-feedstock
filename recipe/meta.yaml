@@ -1,8 +1,8 @@
 {% set name = "graphene" %}
-{% set version = "1.4" %}
+{% set version = "2.1.1" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "80de19b703990376ffbfc0f8c3636f90bd125e34f53547bdee5642509e11969b" %}
+{% set hash = "76c670f6184eb311c9f4a23b770f114aa032e42eefe509a10a306e1745f70407" %}
 {% set build = 0 %}
 
 package:
