@@ -1,53 +1,42 @@
 {% set name = "graphene" %}
-{% set version = "1.4" %}
-{% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "80de19b703990376ffbfc0f8c3636f90bd125e34f53547bdee5642509e11969b" %}
-{% set build = 0 %}
+{% set version = "2.1.3" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: b8ec446d17fa68721636eaad3d6adc1a378cb6323e219814c8f98c9928fc9642
 
 build:
   noarch: python
-  number: {{ build }}
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
+    - pip
     - python
-    - setuptools
-
   run:
+    - aniso8601 >=3,<4
+    - graphql-core >=2.1,<3
+    - graphql-relay >=0.4.5,<1
     - python
-    - six >=1.10.0
-    - graphql-core >=1.1
-    - graphql-relay >=0.4.5
-    - promise >=2.0
+    - six >=1.10.0,<2
 
 test:
   imports:
     - graphene
-    - graphene.pyutils
-    - graphene.relay
-    - graphene.test
-    - graphene.types
-    - graphene.utils
 
 about:
-  home: http://graphene-python.org/
-  license_file: {{ RECIPE_DIR }}/LICENSE
+  home: http://graphene-python.org
+  license_file: LICENSE
   license: MIT
   license_family: MIT
   summary: 'GraphQL Framework for Python'
   dev_url: https://github.com/graphql-python/graphene
-  doc_url: http://docs.graphene-python.org/en/latest/
+  doc_url: https://docs.graphene-python.org
 
 extra:
   recipe-maintainers:
