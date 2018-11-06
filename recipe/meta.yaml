@@ -31,7 +31,7 @@ test:
     - graphene
 
 about:
-  home: http://graphene-python.org
+  home: https://graphene-python.org
   license_file: LICENSE
   license: MIT
   license_family: MIT
