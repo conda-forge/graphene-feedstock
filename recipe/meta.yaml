@@ -1,5 +1,5 @@
 {% set name = "graphene" %}
-{% set version = "2.1.5" %}
+{% set version = "2.1.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8eee7e2ae9c22d01cf85a43f8c1aeb776a478bc2e20e0ca8d5fb17ba4b9f4767
+  sha256: fcbcb24ee960b2c768de4285fbd025aa98eed4ecb6a679bbd41985b05b4008c5
 
 build:
   noarch: python
