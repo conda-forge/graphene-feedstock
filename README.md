@@ -122,5 +122,4 @@ Feedstock Maintainers
 
 * [@bollwyvl](https://github.com/bollwyvl/)
 * [@carlodri](https://github.com/carlodri/)
-* [@pmlandwehr](https://github.com/pmlandwehr/)
 
