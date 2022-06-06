@@ -26,20 +26,28 @@ requirements:
 test:
   source_files:
     - graphene/tests
+  files:
+    - fix_tests.py
   requires:
-    - iso8601 >=0.1,<2
-    - mock >=4.0,<5
+    # for pip check
     - pip
+    # for tests
+    - iso8601 >=1,<2
+    - mock >=4,<5
     - promise >=2.3,<3
-    - pytest >=5.3,<6
-    - pytest-asyncio >=0.10,<0.17.2
-    - pytest-benchmark >=3.2,<4
-    - pytest-cov >=2.8,<3
-    - pytest-mock >=2,<3
-    - pytz ==2021.1
-    - snapshottest >=0.5,<1
+    - pytest >=6,<7
+    - pytest-asyncio >=0.16,<2
+    - pytest-benchmark >=3.4,<4
+    - pytest-cov >=3,<4
+    - pytest-mock >=3,<4
+    - pytz ==2022.1
+    - snapshottest >=0.6,<1
   imports:
     - graphene
+  commands:
+    - pip check
+    - python fix_tests.py
+    - cd graphene/tests && pytest -vv --cov graphene --cov-report term-missing:skip-covered --no-cov-on-fail --cov-fail-under=50
 
 about:
   home: https://graphene-python.org
