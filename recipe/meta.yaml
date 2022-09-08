@@ -1,4 +1,4 @@
-{% set version = "3.1" %}
+{% set version = "3.1.1" %}
 
 package:
   name: graphene
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/graphene/graphene-{{ version }}.tar.gz
-  sha256: 73332510a14b94fcb925dae4563ad6a028d414144704fdcc191565af72608798
+  sha256: ff251dbc39a6409106c41de444358d93b2c5588d161dce2245bea7d74b445c86
 
 build:
   noarch: python
