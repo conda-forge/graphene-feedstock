@@ -1,4 +1,4 @@
-{% set version = "3.1.1" %}
+{% set version = "3.2" %}
 
 package:
   name: graphene
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/graphene/graphene-{{ version }}.tar.gz
-  sha256: ff251dbc39a6409106c41de444358d93b2c5588d161dce2245bea7d74b445c86
+  sha256: 8eb652ccd51c672893d47e8efaed89871530844ccb387ca9f354837eaa948604
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -34,7 +34,6 @@ test:
     # for tests
     - iso8601 >=1,<2
     - mock >=4,<5
-    - promise >=2.3,<3
     - pytest >=6,<7
     - pytest-asyncio >=0.16,<2
     - pytest-benchmark >=3.4,<4
