@@ -1,11 +1,11 @@
-About graphene
-==============
+About graphene-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/graphene-feedstock/blob/main/LICENSE.txt)
 
 Home: https://graphene-python.org
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/graphene-feedstock/blob/main/LICENSE.txt)
 
 Summary: GraphQL Framework for Python
 
